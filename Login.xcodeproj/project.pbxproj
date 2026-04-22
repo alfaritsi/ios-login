@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EA55AC352F98609900B70EC0 /* Login */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Login;
-			sourceTree = "<group>";
-		};
 		EA55AC462F98609B00B70EC0 /* LoginTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LoginTests;
@@ -43,6 +38,11 @@
 		EA55AC502F98609B00B70EC0 /* LoginUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LoginUITests;
+			sourceTree = "<group>";
+		};
+		EA55ADA42F98BA8200B70EC0 /* Login */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		EA55AC2A2F98609900B70EC0 = {
 			isa = PBXGroup;
 			children = (
-				EA55AC352F98609900B70EC0 /* Login */,
+				EA55ADA42F98BA8200B70EC0 /* Login */,
 				EA55AC462F98609B00B70EC0 /* LoginTests */,
 				EA55AC502F98609B00B70EC0 /* LoginUITests */,
 				EA55AC342F98609900B70EC0 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EA55AC352F98609900B70EC0 /* Login */,
+				EA55ADA42F98BA8200B70EC0 /* Login */,
 			);
 			name = Login;
 			packageProductDependencies = (
