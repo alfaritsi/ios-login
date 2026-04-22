@@ -13,23 +13,35 @@ struct HomeView: View {
     @State private var name: String = ""
     
     var body: some View {
-        VStack(spacing: 20) {
-            
-            Text("Home")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            Text("Welcome \(name)")
-            
-            CustomButton(title: "Ambil Data User", color: .green) {
-                getUser()
+        NavigationView {
+            VStack(spacing: 20) {
+                
+                Text("Home")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Text("Welcome \(name)")
+                
+                CustomButton(title: "Ambil Data User", color: .green) {
+                    getUser()
+                }
+                
+                // 🔥 BUTTON KE LIST PRODUK
+                NavigationLink(destination: ProductListView()) {
+                    Text("List Produk")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
+                CustomButton(title: "Logout", color: .red) {
+                    logout()
+                }
             }
-            
-            CustomButton(title: "Logout", color: .red) {
-                logout()
-            }
+            .padding()
         }
-        .padding()
     }
     
     func getUser() {
